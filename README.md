@@ -20,8 +20,8 @@ tested every change in the game.
 
 ## Installing
 
-1. Download shank-access-setup.exe from the [latest release](../../releases/latest) and run it. It can run from any
-   folder.
+1. Download shank-access-setup.exe from the newest release on the [Releases page](../../releases) and run it. It can
+   run from any folder.
 2. Setup searches your Steam libraries for Shank and fills in the Shank folder field. If it finds nothing, or you want
    to use a different copy, press Browse and choose the Shank folder yourself. This is the folder that contains the
    bin and data folders. To open it from Steam, right-click Shank, choose Manage, then Browse local files.

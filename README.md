@@ -20,7 +20,8 @@ tested every change in the game.
 
 ## Installing
 
-1. Download shank-access-setup.exe from this page and run it. It can run from any folder.
+1. Download shank-access-setup.exe from the [latest release](../../releases/latest) and run it. It can run from any
+   folder.
 2. Setup searches your Steam libraries for Shank and fills in the Shank folder field. If it finds nothing, or you want
    to use a different copy, press Browse and choose the Shank folder yourself. This is the folder that contains the
    bin and data folders. To open it from Steam, right-click Shank, choose Manage, then Browse local files.
@@ -118,9 +119,9 @@ To report the problem, [open an issue](../../issues/new/choose) and attach that 
 
 ## Building from source
 
-The source zip on this page contains the full source: C++ for the mod itself, and Python tools for setup and
-development. You'll need Visual Studio 2022 with the x86 compiler, CMake, and Python 3 with the packages listed in
-requirements.txt. CLAUDE.md and the docs folder describe the project's layout and the build commands. The source
+The source zip attached to each [release](../../releases) contains the full source for that version: C++ for the mod
+itself, and Python tools for setup and development. You'll need Visual Studio 2022 with the x86 compiler, CMake, and
+Python 3 with the packages listed in requirements.txt. CLAUDE.md and the docs folder describe the project's layout and the build commands. The source
 doesn't include any files made from the game. Setup creates them from your copy of Shank, and tools/deploy.py does
 the same during development.
 

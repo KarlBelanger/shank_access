@@ -24,14 +24,14 @@ tested every change in the game.
 2. Setup searches your Steam libraries for Shank and fills in the Shank folder field. If it finds nothing, or you want
    to use a different copy, press Browse and choose the Shank folder yourself. This is the folder that contains the
    bin and data folders. To open it from Steam, right-click Shank, choose Manage, then Browse local files.
-3. Press Install, or just press Enter. Installing takes about two minutes, and a progress bar shows how far along it
+3. Press Install. Installing takes about two minutes, and a progress bar shows how far along it
    is. Setup builds the mod's level maps and routes from your own copy of the game, because the download contains
    none of Klei's files. A message tells you when it's finished. You can cancel at any point, and setup removes
    everything it had written.
 4. Start Shank. After a few seconds you'll hear "Shank access loaded", followed by the key that opens the mod menu.
 
 Close the game before running setup. If you run setup again later, it tells you which version is installed and offers
-to update, reinstall or uninstall it. When you uninstall, it asks whether to remove your mod settings as well. Setup
+to update, reinstall or uninstall it. When you uninstall, you choose between removing the mod only and removing the mod plus your settings. Setup
 never changes the game's own files, so Steam's "Verify integrity of game files" leaves the mod alone. If the mod ever
 tells you it needs setup, run setup again.
 

@@ -1,0 +1,34 @@
+name: Bug report
+description: Something in Shank Access sounds wrong, says the wrong thing, or gets you stuck.
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, what you heard or what happened, and what you expected instead.
+    validations:
+      required: true
+  - type: input
+    id: where
+    attributes:
+      label: Where
+      description: The level and the checkpoint you started from (as the mod menu or the game names them), if it's in a level.
+  - type: input
+    id: version
+    attributes:
+      label: Shank Access version
+      description: Shown by shank-access-setup.exe for your Shank folder (for example 0.2-beta-abc1234).
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: >
+        If you pressed F2 during the session, the mod saved its logs as one zip file when the game closed, in Documents,
+        Shank Access, logs, named shank-access followed by the date and time. Attach that zip file (drag it in here), and
+        say which mark shows the problem.
+  - type: input
+    id: reader
+    attributes:
+      label: Screen reader
+      description: For example NVDA 2026.1, JAWS 2026, or SAPI voices.

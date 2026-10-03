@@ -1,0 +1,16 @@
+name: Feature request
+description: An idea for Shank Access: a new cue, an announcement, a setting, or a change to how something works.
+labels: [enhancement]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: The idea
+      description: What you'd like, and the situation in the game where it would help.
+    validations:
+      required: true
+  - type: textarea
+    id: how
+    attributes:
+      label: How it could sound or work
+      description: Optional. Sounds, wording, keys, or a setting you have in mind.

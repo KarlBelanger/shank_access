@@ -4,7 +4,7 @@ Shank Access makes Shank, Klei Entertainment's 2010 side-scrolling brawler, play
 menus aloud, announces what happens in a fight, and adds positional sounds for ledges, jumps, pickups, enemies and
 hazards. Its waypoint mode can guide you from one checkpoint to the next, one move at a time.
 
-This is a public beta, version 0.2. Every single-player level has been played from start to finish with the mod, but
+This is a public beta, version 0.3. Every single-player level has been played from start to finish with the mod, but
 you may still run into rough spots. Reports are welcome.
 
 Shank Access was written with Claude Code, Anthropic's AI coding tool, under the direction of a blind player who
@@ -12,8 +12,10 @@ tested every change in the game.
 
 ## What you need
 
-- The Steam version of Shank for Windows. The mod checks the game when it starts. On any other version it says
-  "Shank access is disabled" and does nothing more.
+- The Steam version of Shank for Windows: either the regular version or the classic version (Steam's "classic" beta
+  branch, which restores some of the original release's content). The mod checks the game when it starts. On any
+  other version it says "Shank access is disabled" and does nothing more. On the classic version everything works
+  except safe edges, because that version of the game has no edge stop for the mod to use.
 - A screen reader such as NVDA or JAWS, or the Windows SAPI voices.
 - A single-player game. Co-op isn't supported, because the mod follows one Shank and the co-op levels have no map
   data for its sounds.
@@ -25,16 +27,25 @@ tested every change in the game.
 2. Setup searches your Steam libraries for Shank and fills in the Shank folder field. If it finds nothing, or you want
    to use a different copy, press Browse and choose the Shank folder yourself. This is the folder that contains the
    bin and data folders. To open it from Steam, right-click Shank, choose Manage, then Browse local files.
-3. Press Install. Installing takes about two minutes, and a progress bar shows how far along it
-   is. Setup builds the mod's level maps and routes from your own copy of the game, because the download contains
-   none of Klei's files. A message tells you when it's finished. You can cancel at any point, and setup removes
-   everything it had written.
+3. Press Install. Setup works out which version of Shank you have, then builds the mod's level maps and routes from
+   your own copy of the game, because the download contains none of Klei's files. This takes about two minutes, and a
+   progress bar shows how far along it is. A message tells you when it's finished. You can cancel at any point, and
+   the Shank folder is left as it was.
 4. Start Shank. After a few seconds you'll hear "Shank access loaded", followed by the key that opens the mod menu.
 
-Close the game before running setup. If you run setup again later, it tells you which version is installed and offers
-to update, reinstall or uninstall it. When you uninstall, you choose between removing the mod only and removing the mod plus your settings. Setup
-never changes the game's own files, so Steam's "Verify integrity of game files" leaves the mod alone. If the mod ever
-tells you it needs setup, run setup again.
+Close the game before running setup. If you start Shank while setup is working, the mod stays off for that game, and
+setup asks you to close the game before it finishes.
+
+### Updating, switching versions and uninstalling
+
+- Run setup again to update, reinstall or uninstall. It tells you which version of the mod is installed. Updates
+  change only the files that differ, and often take only seconds.
+- If you switch Shank between the regular and the classic version in Steam, the mod tells you to run setup the first
+  time you start each version. Setup offers to switch the mod too. After that, the mod keeps both versions' files and
+  swaps them by itself when the game starts, and Update on either version updates both.
+- When you uninstall, you choose between removing the mod only and removing the mod plus your settings.
+- Setup never changes the game's own files, so Steam's "Verify integrity of game files" leaves the mod alone. If the
+  mod ever tells you it needs setup, run setup again.
 
 ## Keys
 
@@ -48,6 +59,7 @@ You can change every key in the mod menu except F9 and F11, and you can give eac
 - N lists the enemies nearby. L locks the enemy sound onto the nearest enemy. Press it again to move to the next
   enemy, and after the last one it turns off. K does the same for special enemies only.
 - E turns safe edges on or off. With safe edges on, Shank stops at a dangerous drop until you push toward it again.
+  (Not on the classic version: there the key does nothing and the mod menu says safe edges aren't supported.)
 - W turns waypoint mode on or off. Q tells you the next move toward the next checkpoint.
 - C switches between placing the game's sounds and the enemy sounds around Shank, and placing them by the camera the
   way the original game does.

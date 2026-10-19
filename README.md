@@ -4,7 +4,7 @@ Shank Access makes Shank, Klei Entertainment's 2010 side-scrolling brawler, play
 menus aloud, announces what happens in a fight, and adds positional sounds for ledges, jumps, pickups, enemies and
 hazards. Its waypoint mode can guide you from one checkpoint to the next, one move at a time.
 
-This is a public beta, version 0.3. Every single-player level has been played from start to finish with the mod, but
+This is a public beta, version 0.4. Every single-player level has been played from start to finish with the mod, but
 you may still run into rough spots. Reports are welcome.
 
 Shank Access was written with Claude Code, Anthropic's AI coding tool, under the direction of a blind player who
@@ -56,6 +56,8 @@ You can change every key in the mod menu except F9 and F11, and you can give eac
 - F9 repeats the last thing spoken. F8 repeats the last long message, such as a tutorial or a dialog.
 - H tells you your health, and the boss's health during a boss fight. G tells you how many grenades you have.
 - P lists the pickups nearby. T lists the things nearby that you can climb or swing on.
+- To pick up an item, hold Down and press the game's Grapple button (on the classic version, press Attack). The mod
+  reminds you the first two times something comes in reach.
 - N lists the enemies nearby. L locks the enemy sound onto the nearest enemy. Press it again to move to the next
   enemy, and after the last one it turns off. K does the same for special enemies only.
 - E turns safe edges on or off. With safe edges on, Shank stops at a dangerous drop until you push toward it again.
@@ -89,9 +91,28 @@ F7 opens the menu and pauses the game. Up and Down move through the items. Enter
 setting, and Left and Right adjust values. Escape or Backspace goes back a level, and Escape at the top level, or F7,
 closes the menu. Each item ends with a sentence that explains what it does.
 
-The categories are Speech, Sounds, Navigation, Enemies, Status and pickups, and General. In Speech you can send each
-kind of message to your screen reader or to a SAPI voice, and set the voice's rate and volume. To change a key, move
-to it, press Enter, then press the new key. Your settings are saved as soon as you change them.
+The categories are Speech, Sounds, Navigation, Enemies, Status and pickups, General, and Cheats. In Speech you can
+send each kind of message to your screen reader or to a SAPI voice, and set the voice's rate and volume. To change a
+key, move to it, press Enter, then press the new key; Delete clears it. Your settings are saved as soon as you change
+them.
+
+### Cheats
+
+Everything in Cheats starts off, and your choices are remembered from one game to the next. The menu lists:
+
+- **Cheats**, which turns all the cheats you've chosen on or off together. While it's off, the cheats and Spawn items
+  don't work, but your choices are kept.
+- **Spawn items**, which drops a minigun, a flamethrower, a health pickup or a grenade pickup in front of Shank once
+  you close the menu and unpause. Choose the same item again before then to cancel it. You can have one of each at a
+  time. If one is already on screen, or Shank is carrying that weapon, the mod tells you where it is instead.
+- **Go to checkpoint**, shown while you're in a level, which restarts the level at any of its checkpoints.
+- **Skip startup movies**, which skips the logo and intro movies from the next time you start the game.
+- **Infinite health**, **infinite grenades**, **god mode** and **super speed**. God mode and super speed are the
+  game's own developer settings; with god mode on, enemies go down in one hit. Infinite health can't save Shank from
+  pits and other instant deaths.
+
+The Cheats switch, each cheat and each item you can spawn can have its own key and controller button. None are set
+until you give them one.
 
 ### Controller support
 
@@ -133,8 +154,8 @@ To report the problem, [open an issue](../../issues/new/choose) and attach that 
 
 The source zip attached to each [release](../../releases) contains the full source for that version: C++ for the mod
 itself, and Python tools for setup and development. You'll need Visual Studio 2022 with the x86 compiler, CMake, and
-Python 3 with the packages listed in requirements.txt. CLAUDE.md and the docs folder describe the project's layout and the build commands. The source
-doesn't include any files made from the game. Setup creates them from your copy of Shank, and tools/deploy.py does
+Python 3 with the packages listed in requirements.txt. CLAUDE.md and the docs folder describe the project's layout
+and the build commands. The source doesn't include any files made from the game. Setup creates them from your copy of Shank, and tools/deploy.py does
 the same during development.
 
 ## Licence
